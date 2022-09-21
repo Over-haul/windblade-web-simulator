@@ -11,14 +11,16 @@ function App() {
   return (
     <EnvProvider>
       <BrowserRouter>
-        <Header />
         <div className={styles.wrapper}>
-          <Sidebar />
-          <div className={styles.content}>
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/overhaul' element={<OverhaulIframe />} />
-            </Routes>
+          <Header />
+          <div className={styles.container}>
+            <Sidebar />
+            <div className={styles.content}>
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/overhaul' element={<OverhaulIframe />} />
+              </Routes>
+            </div>
           </div>
         </div>
       </BrowserRouter>
