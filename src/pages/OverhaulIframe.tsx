@@ -7,6 +7,6 @@ export const OverhaulIframe = () => {
     src={envContext.url}
     title='overhaul-iframe'
     id='overhaul-iframe'
-    sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals allow-downloads"
   />
 }
